@@ -1,3 +1,5 @@
+
+
 export default class Song {
   constructor(song) {
     this.title = song.trackName
@@ -22,12 +24,28 @@ export default class Song {
     <li>Artist:${this.artist}</li>
     <li>\$${this.price}</li>   
     </ul>
-    <video controls src="${this.preview}"></video>
-    </div>
-  </div>
-</div>
-        `
+    ` + this.mediaTag()
 
+
+
+  }
+  mediaTag() {
+    if (this.preview.split('.').pop() == 'm4a') {
+      return `
+      <audio style = "width: 100%;" controls src="${this.preview}"></audio>
+      </div>
+      </div>
+      </div>
+      `
+    } else {
+      return `
+<video style = "width: 100%;" controls src="${this.preview}"></video>
+</div>
+</div>
+</div>
+`
+    }
   }
 
 }
+//

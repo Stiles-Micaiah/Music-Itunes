@@ -6,13 +6,88 @@ height: 100vh;
 }
 
 
-.col-2 {
+/* .col-2 {
   display: flex;
   justify-content: center;
   size: 27em;
   margin-top: 20vh;
+} */
+
+/* .col-4>img {
+  object-fit: contain
+} */
+/* 
+#search-bk>.container>.row>.col-4 {
+    display: table; 
+    height: 100%; 
 }
 
-.col-4>img {
-  object-fit: contain
+#search-bk>.container>.row>.col-4>.card {
+    display: table-cell; 
+
+} */
+/* #search-bk>.container>.row>.col-4>.card>.card-body */
+.navbar {
+  background-image: linear-gradient(
+    to top right,
+    rgb(146, 0, 214),
+    rgb(41, 0, 224),
+    rgb(230, 8, 8)
+  )
+}
+#navbarColor01>form {
+    mix-blend-mode: soft-light;
+
+}
+
+.col-4>.card>.card-body>ul {
+  list-style: none;
+
+}
+
+#search-bk  {
+
+  background-image:
+    linear-gradient(
+      45deg,
+      rgb(9, 155, 87),
+      red, 
+      #f06d06, 
+      rgb(0, 255, 34), 
+      rgb(20, 9, 179),
+      rgb(209, 116, 9),
+      rgb(209, 9, 199),
+      rgb(9, 155, 87),
+      red, 
+      #f06d06, 
+      rgb(0, 255, 34), 
+      rgb(20, 9, 179),
+      rgb(209, 116, 9),
+      rgb(209, 9, 199),
+      rgb(9, 155, 87),
+      red, 
+      #f06d06, 
+      rgb(0, 255, 34), 
+      rgb(20, 9, 179),
+      rgb(209, 116, 9),
+      rgb(209, 9, 199)
+
+    );
+}
+#search-bk>.container>.row>.col-4>.card>.card-body  {
+
+  background-image:
+    linear-gradient(
+      to top left,
+      rgb(20, 9, 179),
+      red, 
+      rgb(209, 9, 199),
+      #f06d06, 
+      rgb(9, 155, 87)
+
+    );
+}
+#search-bk>.container>.row>.col-4>.card>.card-body>* {
+    /* This value is the OPPOSITE color of our background */
+    mix-blend-mode: difference;
 }
