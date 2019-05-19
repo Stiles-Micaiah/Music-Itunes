@@ -13,10 +13,12 @@ export default class Song {
 
 
   get Template() {
-    return `
-        <div class= "col-4">
-        <div class="card">
-<img src="${this.albumArt}" class="card-img-top" alt="...">
+
+    if (this.preview.split('.').pop() == 'm4a') {
+      return `
+<div class= "col-4">
+ <div class="card">
+  <img src="${this.albumArt}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${this.title}</h5>
     <ul>
@@ -24,28 +26,63 @@ export default class Song {
     <li>Artist:${this.artist}</li>
     <li>\$${this.price}</li>   
     </ul>
-    ` + this.mediaTag()
-
-
-
-  }
-  mediaTag() {
-    if (this.preview.split('.').pop() == 'm4a') {
-      return `
-      <audio style = "width: 100%;" controls src="${this.preview}"></audio>
-      </div>
-      </div>
-      </div>
-      `
+    <audio style = "width: 100%;" controls src="${this.preview}"></audio>
+  </div>
+ </div>
+</div>
+    `
     } else {
-      return `
-<video style = "width: 100%;" controls src="${this.preview}"></video>
-</div>
-</div>
-</div>
-`
+      return ''
     }
+
+
+
+
+
   }
+
 
 }
-//
+
+
+
+
+
+
+
+// get Template() {
+//   return `
+//         <div class= "col-4">
+//         <div class="card">
+// <img src="${this.albumArt}" class="card-img-top" alt="...">
+//   <div class="card-body">
+//     <h5 class="card-title">${this.title}</h5>
+//     <ul>
+//     <li>Album:${this.collection}</li>
+//     <li>Artist:${this.artist}</li>
+//     <li>\$${this.price}</li>   
+//     </ul>
+//     ` + this.mediaTag()
+
+
+
+// }
+// mediaTag() {
+//   if (this.preview.split('.').pop() == 'm4a') {
+//     return `
+//       <audio style = "width: 100%;" controls src="${this.preview}"></audio>
+//       </div>
+//       </div>
+//       </div>
+//       `
+//   } else {
+//     return `
+// <video style = "width: 100%;" controls src="${this.preview}"></video>
+// </div>
+// </div>
+// </div>
+// `
+//   }
+// }
+
+// }
