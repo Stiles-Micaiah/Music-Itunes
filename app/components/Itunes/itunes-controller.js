@@ -38,6 +38,9 @@ class ItunesController {
     document.querySelector('#get-music-button').textContent = 'LOADING....'
     itunesService.getMusicByArtist(artist)
   }
+  playAudio(url) {
+    itunesService.playAudio(url)
+  }
 }
 
 

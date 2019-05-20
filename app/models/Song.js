@@ -18,7 +18,7 @@ export default class Song {
       return `
 <div class= "col-4">
  <div class="card">
-  <img src="${this.albumArt}" class="card-img-top" alt="...">
+  <img onclick= "app.controllers.itunesCtrl.playAudio('${this.preview}')" ondblclick= "app.controllers.itunesCtrl.playAudio('stop')" src="${this.albumArt}" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">${this.title}</h5>
     <ul>

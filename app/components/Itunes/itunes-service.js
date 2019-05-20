@@ -34,6 +34,14 @@ class ItunesService {
   addSubscriber(prop, fn) {
     _subscribers[prop].push(fn)
   }
+  audioStop() {
+    let sound = document.getElementById('audio-tag')
+    sound.pause()
+  }
+  playAudio(url) {
+    url == 'stop' ? this.audioStop() : document.getElementById('audio-tag').setAttribute('src', url)
+
+  }
 }
 
 

@@ -91,3 +91,16 @@ height: 100vh;
     /* This value is the OPPOSITE color of our background */
     mix-blend-mode: difference;
 }
+#audio-tag {
+  background-color: #00000000;
+  /* background-image: linear-gradient(
+    to top right,
+    red,
+    orange
+  ); */
+  mix-blend-mode: difference;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
