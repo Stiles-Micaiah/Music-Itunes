@@ -103,6 +103,7 @@ height: 100vh;
   position: fixed;
   bottom: 0;
   width: 100%;
+display: none;
 }
 
 .card-img-top:hover {
