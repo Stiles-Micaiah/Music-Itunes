@@ -26,7 +26,6 @@ export default class Song {
     <li>Artist:${this.artist}</li>
     <li>\$${this.price}</li>   
     </ul>
-    <audio style = "width: 100%;" controls src="${this.preview}"></audio>
   </div>
  </div>
 </div>
