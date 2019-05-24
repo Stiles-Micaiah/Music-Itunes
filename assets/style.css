@@ -27,6 +27,15 @@ height: 100vh;
 
 } */
 /* #search-bk>.container>.row>.col-4>.card>.card-body */
+
+.navbar-expand-lg {
+position: fixed;
+top: 0;
+z-index: 1;
+width: 100%;
+}
+
+
 .navbar {
   background-image: linear-gradient(
     to top right,

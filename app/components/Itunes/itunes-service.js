@@ -9,9 +9,9 @@ let _subscribers = {
   songs: []
 }
 
-function setState(prop, data) {
-  _state[prop] = data
-  _subscribers[prop].forEach(fn => fn())
+function setState(propName, data) {
+  _state[propName] = data
+  _subscribers[propName].forEach(fn => fn())
 }
 
 //DO NOT MODIFY
